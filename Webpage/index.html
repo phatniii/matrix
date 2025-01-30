@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recommended Restaurants & Cafe</title>
+        <link rel="stylesheet" type="text/css" href="style3.css">
+    </head>
+    <body>
+        <header>
+            <a href ="#" class="logo">Phitsanulok</a>
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li class="dd"><a href="#" >RESTAURANTS</a>
+                <ul class="dropdown">
+                    <li><a href="page2.html">Nami Izakaya & sushi ba </a></li>
+                    <li><a href="page3.html">Penang Steak</a></li>
+                    <li><a href="page4.html">ขนมจีนต้มก้ามปู</a></li>
+                    <li><a href="page5.html">ครัวน่านน้ำ</a></li>
+                    <li><a href="page6.html">ส้มตำปูเสื่อ</a></li>
+                </ul>
+            </li>
+                <li class="dd"><a href="#">CAFE</a>
+                    <ul class="dropdown">
+                    <li><a href="cafe1.html">Refreshing Cafe & Bakery</a></li>
+                    <li><a href="cafe2.html">The Vetala Phitsanulok</a></li>
+                    <li><a href="cafe3.html">Kai Khan</a></li>
+                    <li><a href="cafe4.html">Care Na Cafe'</a></li>
+                    <li><a href="cafe5.html">Wan.Vayla.Cafe</a></li>
+                </ul>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <img src="s.png" id="s">
+            <img src="recom.png" id="rec">
+            <img src="r1.png" id="r1">
+            <h2 id="text">RESTAURANTS and  CAFE</h2>
+            <a href="#sec" id="btn">Website Information</a>
+            <img src="f1_font.png" id="f1_font">
+           
+         </section>
+         <div class="sec" id="sec">
+            <h2>This website was created for</h2><br>
+            <p>เว็บไซต์นี้จัดทำขึ้นเพื่อส่งงานอาจารย์ในรายวิชา Fundamentals of Information Technology 273111 <br>
+            โดยเป็นการแนะนำร้านอาหารและคาเฟ่ในจังหวัดพิษณุโลก</p>
+         </div>
+
+         <script>
+    
+            let s = document.getElementById('s');
+            let rec=document.getElementById('rec');
+            let r1=document.getElementById('r1');
+            let text=document.getElementById('text');
+            let btn=document.getElementById('btn');
+            let f1_font=document.getElementById('f1_font');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                s.style.left=value*0.25+'px';
+                rec.style.top=value*1.05+'px';
+                r1.style.top=value*0.5+'px';
+                f1_font.style.top=value*0+'px';
+                text.style.marginRight=value*4+'px';
+                text.style.marginLeft=value*1.5+'px';
+                btn.style.marginTop=value*1.5+'px';
+                header.style.top=value*0.5+'px';
+            })
+         </script>
+    </body>
+</html>
